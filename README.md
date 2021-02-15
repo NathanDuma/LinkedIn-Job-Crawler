@@ -1,6 +1,8 @@
 # Linkedin Job Crawler
 Automatically crawl linkedin and save job application links for later use. Skips easy apply jobs.
 
+This is for educational purposes only. I am not responsible if your LinkedIn account gets suspended or for anything else.
+
 This bot is written in Python using Selenium.
 
 ## Setup 
