@@ -144,7 +144,7 @@ This is the directory where all the job application stats will go to.
 ```yaml
 outputFileDirectory: C:\Users\myDirectory\
  ```
-A list of companies to not apply to.
+A list of companies to ignore.
 ```yaml
 companyBlacklist:
  #- company
