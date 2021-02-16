@@ -138,7 +138,7 @@ class LinkedinCrawler:
             job_title_parsed = job_title.lower().split(' ')
 
             for word in self.title_blacklist:
-                if word in job_title_parsed:
+                if word.lower() in job_title_parsed:
                     contains_blacklisted_keywords = True
                     break
 
@@ -207,7 +207,8 @@ class LinkedinCrawler:
                 except Exception:
                     print("Could not write the job to the file! No special characters in the job title/company is allowed!")
                     traceback.print_exc()
-
+            else:
+                print("Job contains blacklisted keyword or company name!")
             self.seen_jobs += link
 
     def write_to_file(self, company, job_title, link, location, search_location):
